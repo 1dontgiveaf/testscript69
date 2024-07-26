@@ -1,10 +1,5 @@
-local TeleportCheck = false
-
 game.Players.LocalPlayer.OnTeleport:Connect(function(State)
-    if queueteleport then
-        TeleportCheck = true
-        queueteleport("loadstring(game:HttpGet('https://github.com/1dontgiveaf/testscript69/raw/main/Apple-WareCodex'))()")
-    end
+    queueteleport("loadstring(game:HttpGet('https://github.com/1dontgiveaf/testscript69/raw/main/Apple-WareCodex'))()")
 end)
 
 game:GetService("CoreGui"):FindFirstChild("AppleWare iOS"):Destroy()
