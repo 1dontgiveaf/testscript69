@@ -1,3 +1,12 @@
+local TeleportCheck = false
+
+Players.LocalPlayer.OnTeleport:Connect(function(State)
+    if queueteleport then
+        TeleportCheck = true
+        queueteleport("loadstring(game:HttpGet('https://github.com/1dontgiveaf/testscript69/raw/main/Apple-WareCodex'))()")
+    end
+end)
+
 game:GetService("CoreGui"):FindFirstChild("AppleWare iOS"):Destroy()
 
 local framework = setmetatable({
